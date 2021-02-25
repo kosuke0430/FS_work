@@ -13,8 +13,7 @@
     </h1>
         <?php
 
-        try
-        {
+        
         $add_title = $_POST['title'];
         $add_contents = $_POST['contents'];
         $add_date = date("Y年m月d日");
@@ -35,15 +34,17 @@
         $data[] = $add_contents;
         $data[] = $add_date;
         $stmt -> execute($data);
-        $user_id = $pdo->lastInsertId();
         $dbh = null;
 
         print 'タイトル';
-        print '$add_title <br />';
+        print $add_title;
+        print '<br />';
         print '内容';
-        print '$add_contents <br />';
+        print $add_contents;
+        print '<br />';
         print '作成日時';
-        print '$add_date <br />';
+        print $add_date;
+        print '<br />';
         print '<br /><br />';
         print 'を追加します。<br />';
             
