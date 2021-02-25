@@ -11,19 +11,20 @@
 <h1>
     Post New ToDo Page
 </h1>
-<form method="post">
-    <div style="margin: 10px">
-        <label for="title">タイトル：</label>
-        <input id="title" type="text">
-    </div>
-    <div style="margin: 10px">
-        <label for="content">内容：</label>
-        <textarea id="content" name="contents" rows="8" cols="40"></textarea>
-    </div>
-    <input type="submit" name="post" value="投稿する">
-</form>
-<form action="index.html">
-    <button type="submit" name="back">戻る</button>
-</form>
+        <form method="post"action="create_done.php">
+            <div style="margin: 10px">
+                <label for="title">タイトル：</label>
+        <input id="title" name="title" type="text">
+            </div>
+            <div style="margin: 10px">
+                <label for="content">内容：</label>
+                <textarea id="content" name="contents" rows="8" cols="40"></textarea>
+            </div>
+        <input type="submit" name="post" value="投稿する">
+        </form>
+        
+        <form action="index.php">
+            <button type="submit" name="back">戻る</button>
+        </form>
 </body>
 </html>
