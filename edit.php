@@ -22,7 +22,7 @@
     </div>
     <input type="submit" name="post" value="編集する">
 </form>
-<form action="index.html">
+<form action="index.php">
     <button type="submit" name="back">戻る</button>
 </form>
 </body>
